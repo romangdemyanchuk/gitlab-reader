@@ -23,7 +23,7 @@ add_action( 'admin_menu', 'my_admin_menu' );
 function myadmin_page_contents() {
     ?>
     <h1> <?php esc_html_e( 'Gitlab page with settings', 'my-plugin-textdomain' ); ?> </h1>
-    <form method="POST" action="options.php">
+    <form method="POST" action="index.php">
         <?php
         settings_fields( 'gitlab-page' );
         do_settings_sections( 'gitlab-page' );
